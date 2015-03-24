@@ -4,8 +4,6 @@
 
 Vow – библиотека для работы с промисами, реализующая стандарт [Promises/A+](http://promisesaplus.com/) и поддержку спецификации [ES6 Promises](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-objects).
 
-Блок `vow` реализован в технологии `vanila.js` и подходит для использования как на клиенте, так и на сервере.
-
 ## Использование
 
 ### Создание промиса
@@ -20,7 +18,6 @@ function doSomethingAsync() {
     // теперь можно воспользоваться методами resolve, reject и notify 
     // для изменения состояний `deferred`. 
     // Например, `defered.resolve('ok');`
-        
     return deferred.promise(); // затем возвращаем promise, чтобы предоставить возможность подписки
 }
 
@@ -109,3 +106,9 @@ modules.require(['vow'], function(vow) {
 
 
 С полным API библиотеки вы можете ознакомиться здесь http://dfilatov.github.io/vow/.
+
+## Публичные технологии блока
+
+Блок реализован в технологиях:
+
+* `vanilla.js`
